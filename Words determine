@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{    
+    
+     char name[100]="This code determine words in text and prints them on the terminal seperately ";
+     int i;
+     int a=sizeof(name);
+    // printf("%d",a);
+     for(i=0;i<a;i++){
+        if(name[i]==' '){
+            printf("\n");
+
+        }
+
+        else if(name[i]=='\0') break;
+        else {
+            printf("%c",name[i]);
+        }
+     }
+
+
+}
